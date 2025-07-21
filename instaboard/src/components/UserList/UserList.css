@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.dark-mode-main {
+    padding: 20px;
+    background-color: black
+}
+.light-mode-main {
+    padding: 20px;
+    background-color: #E3FDFD
+}
+
+
+
+.btn-liked-dark{
+    color: white;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.cards-container-dark{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: radial-gradient(circle, red, purple, black);
+}
+.cards-container-light{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: radial-gradient(circle, #A6E3E9, #71C9CE, #222831);
+
+}
+
+.usersCount {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.like-btn {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid #666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.like-btn:hover {
+  border-color: red;
+  color: red;
+}
+
+.like-btn .btn-liked {
+  animation-fill-mode: forwards;
+}
+
+.like-btn.animate-like .btn-liked {
+  animation: likeAnimation 1s ease-out;
+}
+
+@keyframes likeAnimation {
+  0% { 
+    color: inherit; 
+    transform: scale(1); 
+  }
+  50% { 
+    color: red; 
+    transform: scale(1.2); 
+  }
+  100% { 
+    color: inherit; 
+    transform: scale(1); 
+  }
+}
+
+
+
+.btnsContainerDark{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: radial-gradient(circle, purple, black);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.btnsContainerLight{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: radial-gradient(ellipse , #485568, #222831);
+    box-shadow: 5 10 5px #A6E3E9;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 70%;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+.card-dark{
+    min-width: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    box-shadow: 0 0 15px purple;
+
+}
+
+.card-light {
+    min-width: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: black;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E3FDFD;
+    box-shadow: 0 0 10px #71C9CE;
+}
+
+
+.h3Dark{
+    color: white;
+    margin: 0;
+    width: 100%;
+    align-self: flex-end;
+    opacity: 60%;
+}
+.h3Light{
+    color: black;
+    margin: 0;
+    width: 100%;
+    align-self: self-end;
+    opacity: 60%;
+}
+
+.hide-btn-light{
+    width: fit-content;
+    align-self: center;
+    border: none;
+    background:none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.hide-btn-dark{
+    width: fit-content;
+    align-self: center;
+    border: none;
+    background:none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: white;
+}
+
+.email-field{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.email-field:hover{
+    width: 100%;
+    overflow:visible;
+    text-overflow: ellipsis;
+    
+}
+
+@media(max-width:600px) {
+.card-light {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: black;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E3FDFD;
+    box-shadow: 0 0 10px #71C9CE;
+}
+
+.card-dark{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    box-shadow: 0 0 15px purple;
+
+}
+}

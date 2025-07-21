@@ -1,0 +1,109 @@
+*{
+    font-family: Pacifico, cursive;
+}
+.darkModeHeader{
+    display: flex;
+    flex-direction: row;
+    background: radial-gradient(circle, purple, black);
+    color: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 15px purple;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.lightModeHeader{
+    display: flex;
+    flex-direction: row;
+    background: radial-gradient(circle, #A6E3E9, #71C9CE, #222831);
+    color: white;
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.h1-Div{
+    flex: 1;
+    justify-self: flex-start;
+    margin-left: 2rem;
+    
+}
+.h1-Div h1 {
+    width: fit-content;
+}
+
+.btn-Div{
+    width: 200px;
+    justify-self: flex-end;
+    align-items: center;
+}
+
+.darkModeH1 {
+    flex: 1;
+    color: white;
+    font-family:Brush Script MT ;
+}
+
+.lightModeH1{
+    flex: 1;
+    color: white;
+    font-family:Brush Script MT ;
+}
+
+
+
+.btn-light{
+    background-color:  #E3FDFD;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: black;
+    margin-bottom: 1rem;
+    transition: 1s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.btn-dark{
+    background-color:  #E3FDFD;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: black;
+    margin-bottom: 1rem;
+    transition: 1s ease
+}
+
+.btn-Change-dark{
+    background-color:  white;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: 1s ease
+}
+
+.btn-Change-light{
+    background-color:  #E3FDFD;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: 1s ease
+}
