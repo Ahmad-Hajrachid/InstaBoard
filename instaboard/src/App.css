@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -6,6 +7,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.bg-gradient-radial {
+  background: radial-gradient(circle, #A6E3E9, #71C9CE, #222831);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

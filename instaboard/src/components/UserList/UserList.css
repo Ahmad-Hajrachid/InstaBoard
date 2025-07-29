@@ -5,18 +5,21 @@
 
 }
 .dark-mode-main {
-    padding: 20px;
-    background-color: black
+    padding: 5px;
+    background-color: black;
+    
 }
 .light-mode-main {
-    padding: 20px;
+    padding: 5px;
     background-color: #E3FDFD
 }
 
 
-
+.btn-liked-light{
+    color: red;
+}
 .btn-liked-dark{
-    color: white;
+    color: red;
 }
 
 .error-message {
@@ -31,6 +34,8 @@
 .cards-container-dark{
     display: flex;
     flex-wrap: wrap;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     justify-content: center;
     padding: 1rem;
     gap: 10px;
@@ -41,6 +46,8 @@
 .cards-container-light{
     display: flex;
     flex-wrap: wrap;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     justify-content: center;
     padding: 1rem;
     gap: 10px;
@@ -72,7 +79,7 @@ header{
     align-items: center;
     justify-content: center;
     background: none;
-    border: 1px solid #666;
+    border: 1px solid red;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -110,8 +117,8 @@ header{
 
 .btnsContainerDark{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
@@ -122,8 +129,8 @@ header{
 
 .btnsContainerLight{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
@@ -132,8 +139,9 @@ header{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
+
 .btnContainer{
-    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -179,16 +187,14 @@ img {
 
 .h3Dark{
     color: white;
+    width: fit-content;
     margin: 0;
-    width: 100%;
-    align-self: flex-end;
     opacity: 60%;
 }
 .h3Light{
     color: black;
+    width: fit-content;
     margin: 0;
-    width: 100%;
-    align-self: self-end;
     opacity: 60%;
 }
 
@@ -212,14 +218,12 @@ img {
 }
 
 .email-field{
-    width: 100%;
-    overflow: hidden;
+    
     text-overflow: ellipsis;
     
 }
 
 .email-field:hover{
-    width: 100%;
     overflow:visible;
     text-overflow: ellipsis;
     
