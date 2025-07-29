@@ -11,7 +11,7 @@
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: space-between;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lightModeHeader{
@@ -23,11 +23,10 @@
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: space-between;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .h1-Div{
-    flex: 1;
     justify-self: flex-start;
     margin-left: 2rem;
     
@@ -43,15 +42,15 @@
 }
 
 .darkModeH1 {
-    flex: 1;
     color: white;
     font-family:Brush Script MT ;
+    font-size: 2rem;
 }
 
 .lightModeH1{
-    flex: 1;
     color: white;
     font-family:Brush Script MT ;
+    font-size: 2rem;
 }
 
 
@@ -65,7 +64,6 @@
     cursor: pointer;
     transition: background-color 0.3s;
     color: black;
-    margin-bottom: 1rem;
     transition: 1s ease;
 }
 
@@ -82,8 +80,8 @@ button:hover{
     cursor: pointer;
     transition: background-color 0.3s;
     color: black;
-    margin-bottom: 1rem;
-    transition: 1s ease
+    transition: 1s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-Change-dark{
